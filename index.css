@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 * {
@@ -365,6 +365,13 @@ footer p {
     margin-right: 15px;
     text-decoration: none;
     color: #000000;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed; /* This can help prevent scrolling on iOS */
 }
 
 
