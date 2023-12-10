@@ -261,8 +261,6 @@ header h2 {
     margin-top: 0;
 }
 
-
-
 .card a {
     background-color: #077df3;
     color: white;
@@ -381,9 +379,33 @@ footer p {
 }
 
 
+/******************************************/
+/************Animate on Scroll*************/
+/******************************************/
+.scroll-hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-5%);
+    transition: all 1s;
+}
+
+.scroll-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+    .scroll-hidden {
+        transition: none;
+    }
+}
 
 
 
+/******************************************/
+/**************Responsiveness**************/
+/******************************************/
 @media (max-width: 1200px) {
     
     .projects-list {

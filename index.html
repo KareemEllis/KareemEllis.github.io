@@ -23,25 +23,27 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/189d290692.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <section id="hero">
-        <nav>
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a class="openModal">CONTACT</a>
-        </nav>
-    
-        <header>
-            <h1>HI, I'M KAREEM ELLIS</h1>
-            <h2>Full Stack Developer</h2>
-            <img src="./images/kareem.jpg" alt="Kareem Ellis, Full Stack Developer">
-        </header>
+        <div class="scroll-hidden"> <!--Animation Container-->
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a class="openModal">CONTACT</a>
+            </nav>
+        
+            <header>
+                <h1>HI, I'M KAREEM ELLIS</h1>
+                <h2>Full Stack Developer</h2>
+                <img src="./images/kareem.jpg" alt="Kareem Ellis, Full Stack Developer">
+            </header>
+        </div>
     </section>
     
     <section id="about">
-        <div class="container">
+        <div class="container scroll-hidden">
             <h2>About Me</h2>
             <p>
                 I am a passionate computer science student deeply fascinated by the convergence of technology and media. 
@@ -53,7 +55,7 @@
     </section>
 
     <section id="skills">
-        <div class="container">
+        <div class="container scroll-hidden">
             <div class="box">
                 <h3>Get to know me</h3>
                 <p>
@@ -96,13 +98,13 @@
     </section>
 
     <section id="projects">
-        <div class="projects-header">
+        <div class="projects-header scroll-hidden">
             <h2>Projects</h2>
             <p>Here are some past projects I've worked on.</p>
         </div>
 
         <!-- Projects List -->
-        <div class="projects-list">
+        <div class="projects-list scroll-hidden">
             
             <div class="card">
                 <div class="image-container">
