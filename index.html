@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kareem Ellis, an enthusiastic Full Stack Developer and Computer Science student. Explore my portfolio to see my projects, skills, and contact information.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kareem Ellis - Full Stack Developer</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Kareem Ellis, an enthusiastic Full Stack Developer and Computer Science student. Explore my portfolio to see my projects, skills, and contact information.">
+    
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
@@ -19,208 +21,338 @@
     <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/189d290692.js" crossorigin="anonymous"></script>
-    <script defer src="./script.js"></script>
+
+    <script defer src="./index.js"></script>
 </head>
 <body>
-    <section id="hero">
-        <div class="scroll-hidden"> <!--Animation Container-->
-            <nav>
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
-                <a class="openModal">CONTACT</a>
-            </nav>
-        
-            <header>
-                <h1>HI, I'M KAREEM ELLIS</h1>
-                <h2>Full Stack Developer</h2>
-                <img src="./images/kareem.jpg" alt="Kareem Ellis, Full Stack Developer">
-            </header>
+    <header class="header">
+        <div class="header__content">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img
+                src="./images/kareem.jpg"
+                alt="Kareem Ellis Picture"
+                class="header__logo-img"
+              />
+            </div>
+            <span class="header__logo-sub">Kareem Ellis</span>
+          </div>
+          <div class="header__main">
+            <ul class="header__links">
+              <li class="header__link-wrapper">
+                <a href="./index.html" class="header__link"> Home </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#about" class="header__link">About </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#projects" class="header__link">
+                  Projects
+                </a>
+              </li>
+              <li class="header__link-wrapper">
+                <a href="./index.html#contact" class="header__link"> Contact </a>
+              </li>
+            </ul>
+            <div class="header__main-ham-menu-cont">
+              <img
+                src="./assets/svg/ham-menu.svg"
+                alt="hamburger menu"
+                class="header__main-ham-menu"
+              />
+              <img
+                src="./assets/svg/ham-menu-close.svg"
+                alt="hamburger menu close"
+                class="header__main-ham-menu-close d-none"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="header__sm-menu">
+          <div class="header__sm-menu-content">
+            <ul class="header__sm-menu-links">
+              <li class="header__sm-menu-link">
+                <a href="./index.html"> Home </a>
+              </li>
+  
+              <li class="header__sm-menu-link">
+                <a href="./index.html#about"> About </a>
+              </li>
+  
+              <li class="header__sm-menu-link">
+                <a href="./index.html#projects"> Projects </a>
+              </li>
+  
+              <li class="header__sm-menu-link">
+                <a href="./index.html#contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+
+
+    <section class="home-hero">
+        <div class="home-hero__content">
+          <h1 class="heading-primary">Hey, My name is Kareem Ellis</h1>
+          <div class="home-hero__info">
+            <p class="text-primary">
+                A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product 
+            </p>
+          </div>
+          <div class="home-hero__cta">
+            <a href="#projects" class="btn btn--bg">Projects</a>
+          </div>
+        </div>
+        <div class="home-hero__socials">
+          <div class="home-hero__social">
+            <a href="https://www.linkedin.com/in/kareem-ellis-1b14a318b/" class="home-hero__social-icon-link">
+              <i class="fa-brands fa-linkedin home-hero__social-icon"></i>
+            </a>
+          </div>
+          <div class="home-hero__social">
+            <a href="https://github.com/KareemEllis" class="home-hero__social-icon-link">
+              <i class="fa-brands fa-github home-hero__social-icon"></i>
+            </a>
+          </div>
+          <div class="home-hero__social">
+            <a href="https://drive.google.com/file/d/1yLDP3u0okB5P2I4I9m60aYn8Mw2EFCbP/view?usp=sharing" class="home-hero__social-icon-link">
+              <i class="fa-solid fa-file home-hero__social-icon"></i>
+            </a>
+          </div>
+      
+        </div>
+        <div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
         </div>
     </section>
     
-    <section id="about">
-        <div class="container scroll-hidden">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate computer science student deeply fascinated by the convergence of technology and media. 
-                My expertise spans a wide range of areas within computer science and media. 
-                My innovative approach shines through in my ability to engage with emerging technologies and make significant contributions to dynamic technical environments. 
-                My dedication to mastering complex technical challenges is a testament to my commitment to the ever-evolving field of computer science.
-            </p>
-        </div>
-    </section>
 
-    <section id="skills">
-        <div class="container scroll-hidden">
-            <div class="box">
-                <h3>Get to know me</h3>
-                <p>
-                    I'm Kareem Ellis, an enthusiastic <strong>Fullstack Web Developer</strong> and Computer Science undergrad. I bring websites and web apps to life, ensuring they're as effective as they are engaging.
-                    Check out my showcased <strong>Projects</strong> for a glimpse of my hands-on expertise.
-                    <br>
-                    <br>
-                    I am open to <strong>Job</strong> opportunities to contribute and expand my full-stack proficiency. 
-                    If you're looking for a developer who's ready to hit the ground running and add value from day one then don't hesitate to <strong>contact</strong> me.
+    <section id="about" class="about sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">About Me</span>
+            <span class="heading-sec__sub">
+              Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology 
+            </span>
+          </h2>
+          <div class="about__content">
+            <div class="about__content-main">
+              <h3 class="about__content-title">Get to know me!</h3>
+              <div class="about__content-details">
+                <p class="about__content-details-para">
+                    I'm Kareem Ellis, an enthusiastic
+                    <strong>Fullstack Web Developer</strong> and <strong>Computer Scientist</strong> located in Jamaica. I bring websites and web apps to life, ensuring they're as effective as they are engaging. My dedication to mastering complex technical challenges is a testament to my commitment to the ever-evolving field of computer science. Check out my showcased <strong>Projects</strong> for a glimpse of my hands-on expertise.
                 </p>
-                <button class="btn openModal">
-                    CONTACT
-                </button>
-                
+              </div>
+              <a href="#contact" class="btn btn--med btn--theme dynamicBgClr"
+                >Contact</a
+              >
             </div>
-            <div class="box">
-                <h3>Skills</h3>
-                <div class="skills-list">
-                    <div><i class="fa-brands fa-html5"></i>HTML</div>
-                    <div><i class="fa-brands fa-css3-alt"></i>CSS</div>
-                    <div><i class="fa-brands fa-js"></i>JavaScript</div>
-                    <div>PostgreSQL</div>
-                    <div>MySQL</div>
-                    <div><i class="fa-brands fa-react"></i>React</div>
-                    <div>Redux</div>
-                    <div><i class="fa-brands fa-vuejs"></i>Vue</div>
-                    <div><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
-                    <div>MaterialUI</div>
-                    <div><i class="fa-brands fa-git"></i>Git</div>
-                    <div><i class="fa-brands fa-github"></i>Github</div>
-                    <div>Responsive Design</div>
-                    <div><i class="fa-brands fa-sass"></i>SASS</div>
-                    <div>Flask</div>
-                    <div><i class="fa-brands fa-node-js"></i>Node</div>
-                    <div>Express</div>
-
-                </div>
+            <div class="about__content-skills">
+              <h3 class="about__content-title">My Skills</h3>
+              <div class="skills">
+                <div class="skills__skill"><i class="fa-brands fa-html5"></i>HTML</div>
+                <div class="skills__skill"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+                <div class="skills__skill"><i class="fa-brands fa-js"></i>JavaScript</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Java</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">MySQL</div>
+                <div class="skills__skill"><i class="fa-brands fa-react"></i>React</div>
+                <div class="skills__skill">Redux</div>
+                <div class="skills__skill"><i class="fa-brands fa-vuejs"></i>Vue</div>
+                <div class="skills__skill">Next</div>
+                <div class="skills__skill">Flask</div>
+                <div class="skills__skill"><i class="fa-brands fa-git"></i>GIT</div>
+                <div class="skills__skill"><i class="fa-brands fa-github"></i>Github</div>
+                <div class="skills__skill"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+                <div class="skills__skill">Tailwind</div>
+                <div class="skills__skill">MUI</div>
+                <div class="skills__skill"><i class="fa-brands fa-sass"></i>SASS</div>
+                <div class="skills__skill">Responsive Design</div>
+                <div class="skills__skill"><i class="fa-brands fa-node-js"></i>Node</div>
+                <div class="skills__skill">Express</div>
+              </div>
             </div>
+          </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="projects-header scroll-hidden">
-            <h2>Projects</h2>
-            <p>Here are some past projects I've worked on.</p>
-        </div>
 
-        <!-- Projects List -->
-        <div class="projects-list scroll-hidden">
-            
-            <div class="card">
-                <div class="image-container">
-                    <img src="./images/jotter_ss.jpg" alt="Kareem Ellis Project Screenshot">
-                </div>
-                <div class="text-content">
-                    <h3>Jotter</h3>
-                    <p>Jotter is the ultimate note-taking companion designed to streamline your thoughts, tasks, and projects with unparalleled ease. </p>
-                    <div class="tech-used">
-                        <div><i class="fa-brands fa-react"></i>React</div>
-                        <div>Redux</div>
-                        <div>MaterialUI</div>
-                        <div><i class="fa-brands fa-node-js"></i>Node</div>
-                        <div>Express</div>
-                        <div>Mongo</div>
-                    </div>
-                    <a href="https://github.com/KareemEllis/jotter-frontend" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://jotter-7a4w.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+    <section id="projects" class="projects sec-pad">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+              Here are some past projects I've worked on.
+            </span>
+          </h2>
+  
+          <div class="projects__content">
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/Mokup_Sumscribe.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <img src="./assets/png/SumscribeLogoSquare.png" class="project-logo" alt="Sumscribe Logo by Kareem Ellis">
+                <h3 class="projects__row-content-title">SumScribe</h3>
+                <p class="projects__row-content-desc">
+                  SumScribe is an AI-powered web app designed to elevate educational experiences, utilizing advanced speech recognition and intelligent summarization to convert lectures into succinct, written notes. By harnessing artificial intelligence, it offers students a powerful tool for capturing and reviewing complex academic content with ease and precision.
+                </p>
+                <a
+                  href="./project-3.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  target="_blank"
+                  >See More</a
+                >
+              </div>
             </div>
+
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/Mockup_Jotter.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <img src="./assets/png/jotter-logo.png" class="project-logo" alt="Jotter Logo by Kareem Ellis">
+                <h3 class="projects__row-content-title">Jotter</h3>
+                <p class="projects__row-content-desc">
+                  Jotter is the ultimate note-taking companion designed to streamline your thoughts, tasks, and projects with unparalleled ease.
+                </p>
+                <a
+                  href="./project-1.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  target="_blank"
+                  >See More</a
+                >
+              </div>
+            </div>
+
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/Mockup_George.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Hall Residence Application Management App</h3>
+                <p class="projects__row-content-desc">
+                  A Web Application designed to assist with the application process and day-to-day operations of George Alleyne Hall, a student residence at the University of the West Indies Mona Campus.
+                </p>
+                <a
+                  href="./project-2.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  target="_blank"
+                  >See More</a
+                >
+              </div>
+            </div>
+          
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/Mockup_DolphinCRM.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <img src="./assets/png/DolphinCRM_Logo.png" class="project-logo" alt="DolphinCRM by Kareem Ellis">
+                <h3 class="projects__row-content-title">Dolphin CRM</h3>
+                <p class="projects__row-content-desc">
+                  Dolphin CRM is an agile and user-friendly customer relationship management tool that simplifies contact storage, enhances customer-employee interactions, and streamlines task management. Designed for businesses of all sizes, it provides a unified platform for managing customer details, appointments, and sales pipelines with precision.
+                </p>
+                <a
+                  href="./project-3.html"
+                  class="btn btn--med btn--theme dynamicBgClr"
+                  target="_blank"
+                  >See More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
     
-
-            <div class="card">
-                <div class="image-container">
-                    <img src="./images/hall_ss.jpg" alt="Kareem Ellis Project Screenshot">
-                </div>
-                <div class="text-content">
-                    <h3>Hall Residence Application Management App</h3>
-                    <p>A Web Application designed to assist with the application process and day-to-day operations of George Alleyne Hall, a student residence at the University of the West Indies Mona Campus.</p>
-                    <div class="tech-used">
-                        <div><i class="fa-brands fa-html5"></i>HTML</div>
-                        <div><i class="fa-brands fa-css3-alt"></i>CSS</div>
-                        <div><i class="fa-brands fa-js"></i>JavaScript</div>
-                        <div>MySQL</div>
-                        <div><i class="fa-brands fa-php"></i>PHP</div>
-                    </div>
-                    <a href="https://github.com/KareemEllis/COMP2171_Project" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="image-container not-done">
-                    <h3>Work in Progress</h3>
-                </div>
-                <div class="text-content">
-                    <h3>SumScribe</h3>
-                    <p>
-                        SumScribe is an AI-powered web app designed to elevate educational experiences, utilizing advanced speech recognition and intelligent summarization to convert lectures into succinct, written notes. 
-                        By harnessing artificial intelligence, it offers students a powerful tool for capturing and reviewing complex academic content with ease and precision.
-                    </p>
-                    <div class="tech-used">
-                        <div><i class="fa-brands fa-react"></i>React</div>
-                        <div><i class="fa-brands fa-python"></i>Python</div>
-                        <div>Flask</div>
-                        <div>OpenAI Whisper</div>
-                        <div>PEGASUS</div>
-                    </div>
-                    <a href="https://github.com/RoschelleMR/AI_Voice-to-Text_Summarization" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
+    <section id="contact" class="contact sec-pad dynamicBg">
+        <div class="main-container">
+          <h2 class="heading heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+            <span class="heading-sec__sub heading-sec__sub--lt">
+              I am open to Job opportunities to contribute and expand my full-stack proficiency. If you're looking for a developer who's ready to hit the ground running and add value from day one then don't hesitate to contact me. 
+            </span>
+          </h2>
+          
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/kareem-ellis-1b14a318b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/KareemEllis/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="resume" href="https://drive.google.com/file/d/1yLDP3u0okB5P2I4I9m60aYn8Mw2EFCbP/view?usp=sharing" target="_blank"><i class="fa-solid fa-file"></i></a>
+            <a href="mailto:kareemellisjm@gmail.com"><p>kareemellisjm@gmail.com</p></a>
             
-            <div class="card">
-                <div class="image-container">
-                    <img src="./images/dolphin_ss1.jpg" alt="Kareem Ellis Project Screenshot">
-                </div>
-                <div class="text-content">
-                    <h3>Dolphin CRM</h3>
-                    <p>
-                        Dolphin CRM is an agile and user-friendly customer relationship management tool that simplifies contact storage, enhances customer-employee interactions, and streamlines task management. 
-                        Designed for businesses of all sizes, it provides a unified platform for managing customer details, appointments, and sales pipelines with precision.
-                    </p>
-                    <div class="tech-used">
-                        <div><i class="fa-brands fa-html5"></i>HTML</div>
-                        <div><i class="fa-brands fa-css3-alt"></i>CSS</div>
-                        <div><i class="fa-brands fa-js"></i>JavaScript</div>
-                        <div>MySQL</div>
-                        <div><i class="fa-brands fa-php"></i>PHP</div>
-                    </div>
-                    <a href="https://github.com/JamillaMo/info2180-finalproject" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-
-        </div>
+        </div>    
         
+
+        </div>
     </section>
 
-    <footer>
-            <p>
-                Think, then code. <br>For in the architecture of software, <br>the blueprint of thought is the strongest foundation.
-            </p>
-            <div class="footer-social">
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/kareem-ellis-1b14a318b/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/KareemEllis" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <p>© Copyright 2023. Made by Kareem Ellis</p>
-    </footer>
-    
-    <!-- Modal -->
-    <dialog id="myModal" class="modal">
-        <form method="dialog">
-            <h2>Contact Me</h2>
-            <h3>Kareem Ellis, BSc. Computer Science 2024</h3>
-            <p>I'm always open to discussing new opportunities and innovative projects. Feel free to connect with me or reach out through any of the channels below:</p>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/kareem-ellis-1b14a318b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/KareemEllis/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:kareemellisjm@gmail.com"><i class="fa-solid fa-envelope"></i>kareemellisjm@gmail.com</a>
-            </div>    
-            <a class="resume" href="https://drive.google.com/file/d/1yLDP3u0okB5P2I4I9m60aYn8Mw2EFCbP/view?usp=sharing" target="_blank"><i class="fa-solid fa-file"></i>View My Resume</a>
 
-            <button class="btn" id="closeModal">Close</button>
-        </form>
-    </dialog>
+    <footer class="main-footer">
+        <div class="main-container">
+          <div class="main-footer__upper">
+            <div class="main-footer__row main-footer__row-1">
+              <h2 class="heading heading-sm main-footer__heading-sm">
+                <span>Social</span>
+              </h2>
+              <div class="main-footer__social-cont">
+                <a class="main-footer__icon" href="https://www.linkedin.com/in/kareem-ellis-1b14a318b/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+                <a class="main-footer__icon" href="https://github.com/KareemEllis/" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                
+                <a class="main-footer__icon" href="https://drive.google.com/file/d/1yLDP3u0okB5P2I4I9m60aYn8Mw2EFCbP/view?usp=sharing" target="_blank">
+                  <i class="fa-solid fa-file"></i>
+                </a>
+              </div>
+            </div>
+            <div class="main-footer__row main-footer__row-2">
+              <h4 class="heading heading-sm text-lt">Kareem Ellis</h4>
+              <p class="main-footer__short-desc">
+                A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product 
+              </p>
+            </div>
+          </div>
+  
+          <div class="main-footer__lower">
+            &copy; Copyright 2024.
+            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kareem-ellis-1b14a318b/"
+             >Kareem Ellis</a
+            >
+          </div>
+        </div>
+    </footer>
 </body>
 </html>
