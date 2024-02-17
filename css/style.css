@@ -103,7 +103,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #bc9758;
+    background: #58b2bc;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -155,12 +155,12 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #bc9758;
+    background: #58b2bc;
     color: #fff; }
   .btn--theme-inv {
-    color: #bc9758;
+    color: #58b2bc;
     background: #fff;
-    border: 2px solid #bc9758;
+    border: 2px solid #58b2bc;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -185,7 +185,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(188, 151, 88, 0.8), rgba(188, 151, 88, 0.8)), url("https://raw.githubusercontent.com/KareemEllis/KareemEllis.github.io/main/assets/svg/common-bg.svg");
+  background: linear-gradient(to right, rgba(88, 178, 188, 0.8), rgba(88, 178, 188, 0.8)), url("https://raw.githubusercontent.com/KareemEllis/KareemEllis.github.io/main/assets/svg/common-bg.svg");
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -327,7 +327,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(188, 151, 88, 0.8), rgba(188, 151, 88, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(88, 178, 188, 0.8), rgba(88, 178, 188, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact i {
@@ -340,7 +340,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(188, 151, 88, 0.8), rgba(188, 151, 88, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(88, 178, 188, 0.8), rgba(88, 178, 188, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -454,14 +454,14 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #bc9758; }
+      color: #58b2bc; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #bc9758; }
+    background: #58b2bc; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -493,7 +493,7 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #bc9758; }
+      color: #58b2bc; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -540,7 +540,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #bc9758; }
+      color: #58b2bc; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
@@ -610,7 +610,7 @@ textarea {
     color: #777; }
     .skills__skill i {
       margin-right: 10px;
-      color: #bc9758; }
+      color: #58b2bc; }
 
 .mouse {
   width: 25px;
