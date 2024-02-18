@@ -253,7 +253,8 @@ textarea {
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
+    grid-gap: 10rem;
+    text-align: center; }
     @media only screen and (max-width: 56.25em) {
       .about__content {
         grid-template-columns: 1fr;
@@ -270,7 +271,7 @@ textarea {
       color: grey;
       max-width: 60rem;
       line-height: 1.7;
-      margin-bottom: 1rem; }
+      margin: 0 auto 1rem auto; }
       .about__content-details-para--hl {
         font-weight: 700;
         margin: 0 3px; }
@@ -598,7 +599,8 @@ textarea {
 
 .skills {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .skills__skill {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
