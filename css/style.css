@@ -250,6 +250,13 @@ textarea {
 
 .about {
   background: #fafafa; }
+  .about .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .about .image-container img {
+      width: 150px;
+      margin-bottom: 10px; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
