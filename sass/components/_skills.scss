@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   &__skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -12,8 +15,9 @@
     font-weight: 600;
     color: #777;
 
-    i {
-      margin-right: 10px;
+    img {
+      width: 20px;
+      margin-right: 5px;
       color: $themeClrPrimary;
     }
   }

@@ -609,6 +609,9 @@ textarea {
   flex-wrap: wrap;
   justify-content: center; }
   .skills__skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -617,8 +620,9 @@ textarea {
     border-radius: 5px;
     font-weight: 600;
     color: #777; }
-    .skills__skill i {
-      margin-right: 10px;
+    .skills__skill img {
+      width: 20px;
+      margin-right: 5px;
       color: #58b2bc; }
 
 .mouse {
