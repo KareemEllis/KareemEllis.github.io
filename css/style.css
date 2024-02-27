@@ -256,6 +256,7 @@ textarea {
     align-items: center; }
     .about .image-container img {
       width: 150px;
+      height: 150px;
       margin-bottom: 10px; }
   .about__content {
     display: grid;
