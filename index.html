@@ -314,15 +314,15 @@
           <div class="projects__content">
             <div class="projects__row">
               <div class="projects__row-img-cont">
-                <div class="carousel-container">
-                  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="carousel-container" data-slide-index="0">
+                  <button class="prev" onclick="moveSlide(-1, 0)">&#10094;</button>
                   <div class="carousel">
                     <img src="./assets/webp/Sumscribe/Mockup_Sumscribe.webp" alt="Sumscribe Home Page">
                     <img src="./assets/webp/Sumscribe/SS_SumScribe_1.webp" alt="Sumscribe Dashboard">
                     <img src="./assets/webp/Sumscribe/SS_SumScribe_2.webp" alt="Sumscribe Edit Page">
                     <img src="./assets/webp/Sumscribe/SS_SumScribe_3.webp" alt="Sumscirbe View Page">
                   </div>
-                  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                  <button class="next" onclick="moveSlide(1, 0)">&#10095;</button>
                 </div>
               </div>
               <div class="projects__row-content">
@@ -342,12 +342,16 @@
 
             <div class="projects__row">
               <div class="projects__row-img-cont">
-                <img
-                  src="./assets/webp/Jotter/Mockup_Jotter.webp"
-                  alt="Jotter Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
+                <div class="carousel-container" data-slide-index="0">
+                  <button class="prev" onclick="moveSlide(-1, 1)">&#10094;</button>
+                  <div class="carousel">
+                    <img src="./assets/webp/Jotter/Mockup_Jotter.webp" alt="Jotter Dashboard">
+                    <img src="./assets/webp/Jotter/SS_Jotter_1.webp" alt="Jotter Note View">
+                    <img src="./assets/webp/Jotter/SS_Jotter_2.webp" alt="Jotter New Note Page">
+                    <img src="./assets/webp/Jotter/SS_Jotter_3.webp" alt="Jotter Manage Labels Page">
+                  </div>
+                  <button class="next" onclick="moveSlide(1, 1)">&#10095;</button>
+                </div>
               </div>
               <div class="projects__row-content">
                 <img src="./assets/png/jotter-logo.png" class="project-logo" alt="Jotter Logo by Kareem Ellis">

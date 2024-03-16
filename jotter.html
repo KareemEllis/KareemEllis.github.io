@@ -29,6 +29,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/189d290692.js" crossorigin="anonymous"></script>
 
+    <script src="./carousel.js"></script>
     <script defer src="./index.js"></script>
   </head>
   <body>
@@ -102,11 +103,16 @@
       <div class="main-container">
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/webp/Jotter/Mockup_Jotter.webp"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
+            <div class="carousel-container" data-slide-index="0">
+              <button class="prev" onclick="moveSlide(-1, 0)">&#10094;</button>
+              <div class="carousel">
+                <img src="./assets/webp/Jotter/Mockup_Jotter.webp" alt="Jotter Dashboard">
+                <img src="./assets/webp/Jotter/SS_Jotter_1.webp" alt="Jotter Note View">
+                <img src="./assets/webp/Jotter/SS_Jotter_2.webp" alt="Jotter New Note Page">
+                <img src="./assets/webp/Jotter/SS_Jotter_3.webp" alt="Jotter Manage Labels Page">
+              </div>
+              <button class="next" onclick="moveSlide(1, 0)">&#10095;</button>
+            </div>
           </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
