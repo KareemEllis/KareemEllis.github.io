@@ -58,6 +58,8 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/189d290692.js" crossorigin="anonymous"></script>
+    
+    <script src="./carousel.js"></script>
     <script defer src="./index.js"></script>
       
 </head>
@@ -312,12 +314,16 @@
           <div class="projects__content">
             <div class="projects__row">
               <div class="projects__row-img-cont">
-                <img
-                  src="./assets/webp/Mockup_Sumscribe.webp"
-                  alt="Software Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
+                <div class="carousel-container">
+                  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                  <div class="carousel">
+                    <img src="./assets/webp/Sumscribe/Mockup_Sumscribe.webp" alt="Sumscribe Home Page">
+                    <img src="./assets/webp/Sumscribe/SS_SumScribe_1.webp" alt="Sumscribe Dashboard">
+                    <img src="./assets/webp/Sumscribe/SS_SumScribe_2.webp" alt="Sumscribe Edit Page">
+                    <img src="./assets/webp/Sumscribe/SS_SumScribe_3.webp" alt="Sumscirbe View Page">
+                  </div>
+                  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
               </div>
               <div class="projects__row-content">
                 <img src="./assets/png/SumscribeLogoSquare.png" class="project-logo" alt="Sumscribe Logo by Kareem Ellis">
@@ -337,8 +343,8 @@
             <div class="projects__row">
               <div class="projects__row-img-cont">
                 <img
-                  src="./assets/webp/Mockup_Jotter.webp"
-                  alt="Software Screenshot"
+                  src="./assets/webp/Jotter/Mockup_Jotter.webp"
+                  alt="Jotter Screenshot"
                   class="projects__row-img"
                   loading="lazy"
                 />
@@ -362,8 +368,8 @@
             <div class="projects__row">
               <div class="projects__row-img-cont">
                 <img
-                  src="./assets/webp/Mockup_DolphinCRM.webp"
-                  alt="Software Screenshot"
+                  src="./assets/webp/DolphinCRM/Mockup_DolphinCRM.webp"
+                  alt="DolphinCRM Screenshot"
                   class="projects__row-img"
                   loading="lazy"
                 />
@@ -387,8 +393,8 @@
             <div class="projects__row">
               <div class="projects__row-img-cont">
                 <img
-                  src="./assets/webp/Mockup_George.webp"
-                  alt="Software Screenshot"
+                  src="./assets/webp/George/Mockup_George.webp"
+                  alt="Hall Residence Application Management App Screenshot"
                   class="projects__row-img"
                   loading="lazy"
                 />

@@ -656,3 +656,28 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .carousel-container .carousel {
+    display: flex; }
+    .carousel-container .carousel img {
+      width: 100%;
+      height: auto; }
+  .carousel-container .prev, .carousel-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 1; }
+  .carousel-container .prev {
+    left: 0; }
+  .carousel-container .next {
+    right: 0; }
