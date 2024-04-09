@@ -626,6 +626,10 @@ textarea {
       margin-right: 5px;
       color: #58b2bc; }
 
+.skills-project {
+  display: flex;
+  flex-wrap: wrap; }
+
 .mouse {
   width: 25px;
   height: 40px;
