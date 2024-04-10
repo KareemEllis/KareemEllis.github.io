@@ -27,4 +27,8 @@
 .skills-project {
   display: flex;
   flex-wrap: wrap;
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
 }
